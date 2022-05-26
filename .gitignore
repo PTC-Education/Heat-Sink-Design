@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Onshape API keys 
+OnshapeAPIKey.py 
