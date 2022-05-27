@@ -32,6 +32,10 @@ To integrate and use the Flask app in this project, please follow the following 
 6. This repository already contains a set of HTTPS certificates. You can simply use the ones we provide, or you can also create your own, following [section 3 of this guide](https://github.com/PTC-Education/Onshape-Integration-Guides/blob/main/Flask_Intro.md#3-configure-flask-as-https). Either way, you should still follow the steps of that section to add the certificates to be a trusted certificate for your computer and launch the app in your browser for testing. 
 7. Follow [section 4.1 of this guide](https://github.com/PTC-Education/Onshape-Integration-Guides/blob/main/Flask_Intro.md#41-onshape-integration-through-oauth) to integrate this app to Onshape through OAuth. 
 
+For the "Action URL" of your OAuth application extension, use the following: 
+
+    https://127.0.0.1:5000/login?documentId={$documentId}&workspaceId={$workspaceId}&elementId={$elementId}
+
 Then, you can simply launch the Flask app in your local computer environment with the following command lines and use it in your Onshape document: 
 
     $ export FLASK_APP=HeatSinkApp
