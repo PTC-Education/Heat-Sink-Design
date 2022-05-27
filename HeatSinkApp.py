@@ -17,6 +17,7 @@ DID = ''
 WID = '' 
 EID = ''
 
+base = 'https://cad.onshape.com'
 
 # Search and check if a file named "OnshapeAPIKey.py" exists in the folder 
 for _, _, files in os.walk('.'): 
@@ -76,7 +77,6 @@ def config():
 
 # ################# Helper functions ####################################################################
 def configure_onshape_client(access, secret, did, wid, eid):
-    base = 'https://cad.onshape.com'
     client = Client(configuration={"base_url": base,
                                    "access_key": access,
                                    "secret_key": secret})
@@ -89,7 +89,6 @@ def configure_onshape_client(access, secret, did, wid, eid):
 # Heat transfer calculation related
 def heat_transfer(client, did, wid, eid):
     url = 'https://cad.onshape.com/documents/{}/w/{}/e/{}'.format(str(did), str(wid), str(eid))
-    base = 'https://cad.onshape.com'
     fixed_url = '/api/partstudios/d/did/w/wid/e/eid/massproperties'
 
     method = 'GET'
