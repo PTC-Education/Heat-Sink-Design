@@ -19,6 +19,10 @@ Without re-running the code, you should be able to see the saved results of the 
 2. Follow the instructions of [section 2 of this guide](https://github.com/PTC-Education/Onshape-Integration-Guides/blob/main/API_Intro.md#2-generating-your-onshape-api-keys) to create your API keys. Such that you can configure your client to access your copied Onshape document. 
 3. Follow the instructions on the Jupyter notebook to configure your client with the API keys you created and copy the URL of your copied Onshape document. Then, you are good to go! 
 
+By making API calls to the model, we can vary its parameters and conduct scientific analysis that may result in a heat map like this as an example: 
+
+![heatmap](./assets/Heatmap.png)
+
 ## 2. Flask application 
 The Flask app was built to demonstrate the capability of integrating a self-built web application to the native Onshape interface. Such that, you can simply launch the app locally in your computer but interact with it in an Onshape document. 
 
