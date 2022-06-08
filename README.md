@@ -48,4 +48,4 @@ Then, you can simply launch the Flask app in your local computer environment wit
 
 Below shows how the Flask app should be running: 
 
-![FlaskGIF](/assets/Flask.gif)
+![FlaskGIF](/assets/Demo.gif)
